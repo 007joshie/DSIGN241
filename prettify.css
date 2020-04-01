@@ -1,0 +1,140 @@
+.str
+{
+    color: #7bbdff !important;
+}
+.kwd
+{
+    color: #93C763;
+}
+.com
+{
+    color: #66747B;
+}
+.typ
+{
+    color: #7bbdff;
+}
+.lit
+{
+    color: #7FC786;
+}
+.pun
+{
+    color: #F1F2F3;
+}
+.pln
+{
+    color: #D0D2D3;
+}
+.tag
+{
+    color: #87D2F2;
+}
+.atn
+{
+    color: #D286B9;
+}
+.atv
+{
+    color: #7FC786;
+}
+.dec
+{
+    color: #F27996;
+}
+pre.prettyprint
+{
+    border: 0px solid #888;
+}
+ol.linenums
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.1) !important;
+    padding-inline-start: 10mm;
+  }
+
+.inline {
+      border-radius: 1mm !important;
+      padding-top: 1mm!important;
+      padding-bottom: 1mm!important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      padding-left: 2mm !important;
+      padding-right: 2mm !important;
+}
+
+.variable {
+      border-radius: 1mm !important;
+      padding-top: 1mm!important;
+      padding-bottom: 1mm!important;
+      padding-left: 2mm !important;
+      padding-right: 2mm !important;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.7) !important;
+}
+.prettyprint {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 4mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    padding-left: 1mm;
+    padding-right: 1mm;
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 6mm;
+    margin-left: 0;
+    border-radius: 1mm;
+}
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: rgba(255, 255, 255, 0.03);
+
+}
+@media print
+{
+    .str
+    {
+        color: #060;
+    }
+    .kwd
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .com
+    {
+        color: #600;
+        font-style: italic;
+    }
+    .typ
+    {
+        color: #404;
+        font-weight: bold;
+    }
+    .lit
+    {
+        color: #7FC786;
+    }
+    .pun
+    {
+        color: #440;
+    }
+    .pln
+    {
+        color: #000;
+    }
+    .tag
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .atn
+    {
+        color: #404;
+    }
+    .atv
+    {
+        color: #060;
+    }
+}

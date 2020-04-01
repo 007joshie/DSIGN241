@@ -1,0 +1,455 @@
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-setclasses !*/
+!function(n,e,s){function o(n,e){return typeof n===e}function a(){var n,e,s,a,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),t.push((a?"":"no-")+r.join("-"))}}function i(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}var t=[],f=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();a(),i(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);
+/* End modernizr */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	opacity: 0;
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+	background: #121212;
+	transition: opacity 1s;
+}
+.wrapper {
+	min-width: 1000px;
+	max-width: 1280px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.loaded{
+	opacity: 1;
+}
+
+hr {
+	border-color: rgba(255,255,255,0.05);
+	border-width: 3px;
+	border-radius: 10px;
+	width: 100%+3mm;
+	transform: translateX(-3mm);
+	margin-top: 6mm;
+	margin-bottom: 6mm;
+}
+
+mark {
+	background-color: #6F78B9;
+}
+
+code {
+  color: rgba(255,255,255,0.8);
+  padding: 1mm 1.5mm;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: .25rem;
+  font-family: 'Inconsolata', monospace !important;
+	font-size: 13pt;
+}
+
+pre li {
+	font-family: 'Inconsolata', monospace !important;
+}
+/* Header
+ * Leave this untouched.
+-----------------------------------------------------------------------------*/
+.header {
+	height: 120px;
+	background: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	border-bottom: 3px solid #999999;
+	color: #999999;
+}
+.header h1 {
+	font-weight: 800;
+	font-size: 3rem;
+	line-height: 1rem;
+}
+.header p {
+	font-size: 2rem;
+	line-height: 1rem;
+}
+
+/*
+ * Do not change above these lines!
+ */
+
+/* can't edit the above lines but I can overide the above statements*/
+ .header, .left-sidebar, .footer {
+ 	background: #121212 !important;
+ }
+ .header {
+	 border-color: rgba(255, 255, 255, 0.2);
+ }
+
+
+
+/* Middle
+ * This is the section where you have to work.
+-----------------------------------------------------------------------------*/
+.header p {
+	display: block !important;
+}
+
+
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 270px;
+}
+.floating-box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	border: none;
+	background: #999999;
+	color: #ffffff;
+	border-radius: 4mm;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	user-select: none;
+}
+
+.subtag {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	margin-top: 15px;
+	padding: 10px;
+	line-height: 1.3em !important;
+	top:0;
+}
+
+.floating-box > h5{
+	transform: translateZ(20px)
+}
+
+.circle {
+	border-radius: 50% !important;
+}
+
+.border {
+	border: solid 2px;
+	border-color: rgba(255,255,255,0.05);
+}
+
+.floating-box h5{
+	line-height: 100px;
+	text-align: center;
+}
+
+.meta-text {
+	font-style: italic;
+	color: #999999;
+}
+
+.card {
+	display: inline-block;
+	margin-bottom: 6mm;
+	max-width: 90%;
+	min-width: 90%
+}
+
+.title::before {
+	background: #121212;
+}
+
+.logo {
+position: relative;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	color: #6F78B9;
+	font-size: 48pt;
+	text-decoration: none;
+	margin-top: 0.8em;
+	margin-bottom: 1em;
+}
+
+.title {
+	position: absolute;
+	height: 9mm;
+	background-color: rgb(50,50,50);
+	border-radius: 50px;
+	overflow: none;
+	margin-left: 6mm;
+	padding-left: 4mm;
+	padding-right: 4mm;
+	font-size: 24pt;
+	padding-top: 0.5em;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: 'Baloo Bhai 2', cursive;
+	font-weight: 500;
+	user-select: none;
+}
+
+.inner-card {
+	margin-top: 8mm;
+	padding: 6mm;
+	padding-top: 9mm;
+	width: auto;
+	height: auto;
+	overflow: auto;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 4mm;
+}
+
+
+/* Typograpgy*/
+.middle h1, h2,h3,h4,h5,h6 {
+	line-height: 1.1em;
+	margin: 0;
+}
+
+
+.middle h1 {
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	color: rgba(255,255,255,0.94);
+	font-size: 48pt;
+}
+
+.middle h2 {
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	color: rgba(255,255,255,0.94);
+	font-size: 36pt;
+}
+
+.middle h3 {
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	color: rgba(255,255,255,0.94);
+	font-size: 24pt;
+}
+
+.middle h4 {
+	font-family: 'Baloo Bhai 2', sans-serif;
+	font-weight: 500;
+	color: rgba(255,255,255,0.78);
+	font-size: 18pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.middle h5 {
+	font-family: 'Baloo Bhai 2', sans-serif;
+	font-weight: 500;
+	color: rgba(255,255,255,0.78);
+	font-size: 16pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.middle h6 {
+	font-family: 'Baloo Bhai 2', sans-serif;
+	font-weight: 500;
+	color: rgba(255,255,255,0.78);
+	font-size: 14pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.inner-card p, .inner-card li, dl{
+	font-family: 'Baloo Bhai 2', sans-serif;
+	font-weight: 400;
+	font-size: 13pt; /*Increased from 12 for readibility*/
+	color: rgba(255, 255, 255, 0.64);
+	line-height: 1.3em !important;
+}
+
+dt {
+	line-height: 1.6em;
+}
+
+img {
+	border-radius: 4mm;
+}
+
+.inner-card a:link {
+	font-family: 'Baloo Bhai 2', cursive;
+	font-weight: 400;
+	font-size: 12pt;
+	color: #AA519E;
+}
+
+.inner-card a:hover{
+	color: #6F78B9;
+}
+
+.inner-card a:visited{
+	color: #AA519E;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ol {
+	margin: 0;
+	color: #AA519E;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #AA519E;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+	margin-top: 0.2em;
+}
+
+ol li::before {
+	display: none;
+}
+
+.header-list li {
+	font-size: 24pt;
+	margin-top: 0;
+	margin-bottom: 3mm;
+	line-height: 1em !important;
+}
+
+ol p{
+	font-size: 24pt;
+}
+
+ol li.not(code) {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+.inner.has(+ .inner-card){
+	margin: 0 !important;
+}
+
+dt {
+	margin-top: 3mm;
+}
+
+blockquote {
+	padding: 3mm;
+	border-left: solid 3px;
+	border-color: #AA519E;
+	font-family: 'Baloo Bhai 2', cursive;
+	font-weight: 400;
+	color: rgba(255,255,255,0.78);
+	font-size: 18pt;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 80%;
+	line-height: 1.3em;
+	transition: ease-in-out 0.1s;
+}
+blockquote:hover {
+	border-left: solid 5px;
+	border-color: #AA519E;
+}
+
+.hide {
+	padding-top: 1.5mm;
+	padding-bottom: 1.5mm;
+	border: 0;
+	margin: 0;
+}
+
+b {
+	font-weight: bolder;
+}
+
+/* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+ol li:before {
+  color: #AA519E;
+  content: counter(list) ".";
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin-left: 3mm;
+  padding: 3mm 9mm;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4mm;
+  transition: all .2s ease;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 16pt;
+}
+button:hover {
+	background-color: rgb(111, 120, 185);
+	border-color: rgba(255,255,255,0);
+	color: rgba(0, 0, 0, 0.7);
+}
+
+button:focus {outline:0;}
+
+
+
+
+
+
+
+/*
+ * Do not change below these lines!
+ */
+
+/* Left Sidebar
+ * Leave this untouched.
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	color: #999999;
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Footer
+ * Leave this untouched.
+-----------------------------------------------------------------------------*/
+.footer {
+	color: #999999;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 0.8rem;
+	border-top: 3px solid #999999;
+	margin: -100px auto 0;
+	min-width: 1000px;
+	max-width: 1280px;
+	height: 100px;
+	background: #FFFFFF;
+	position: relative;
+}
